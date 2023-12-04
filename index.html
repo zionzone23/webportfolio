@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <link rel="stylesheet" type="text/css" href="index.js">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Links End -->
+
+    <title>Capstone 1</title>
+
+</head>
+
+<body class="container vh-100">
+
+    <!-- Navbar Start-->
+    <nav class="navbar navbar-light navbar-expand-lg bg-dark fixed-top px-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#about"><img src="./images/logo-sm.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a href="#about"><img src="./images/logo-sm.png"></a></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#services"><img src="./images/services-sm.png"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects"><img src="./images/projects-sm.png"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact"><img src="./images/contact-sm.png"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tools"><img src="./images/tools-sm.png"></a>
+              </li>
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="./images/links-sm.png"></a>
+                </a>
+                <ul id="dropdown" class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="https://www.facebook.com/gideonbuchoy/">Facebook<a></li>
+                  <li><a class="dropdown-item" href="https://www.instagram.com/gideon_elbert/">Instagram</a></li>
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/elbert-de-la-cruz-076a5220/">LinkedIn</a></li>
+                  <li><a class="dropdown-item" href="https://gitlab.com/me4994740/Me">GitLab</a></li>
+                  <li><a class="dropdown-item" href="https://git.zuitt.co/elbert.vi.delacruz">Zuitt GitHub</a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End-->
+
+    <!-- Banner Start -->
+    <section id="landing" class="d-flex d-grid bg-dark justify-content-center pt-5 mt-4">
+       <!-- Carousel Start -->
+       <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+             <img src="./images/carousel-web.png" class="d-block w-100" alt="./images/carousel-web.png">
+           </div>
+           <div class="carousel-item">
+             <img src="./images/carousel-graphics.png" class="d-block w-100" alt="./images/carousel-graphics.png">
+           </div>
+           <div class="carousel-item">
+             <img src="./images/carousel-mrktng.png" class="d-block w-100" alt="./images/carousel-mrktng.png">
+           </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+       </div>
+       <!-- Carousel End -->
+    </section>
+    <!-- Banner End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="container-fluid bg-dark text-white pt-5 px-4 ps-5 pe-5 mt-3">
+    	<!-- <div id="nickname">
+    		<img class="col-12" src="./images/grafitti.png"/>
+    	</div> -->
+
+        <div id="portrait">
+        	<img class="col-12" src="./images/main-bg2.png"/>
+        </div>
+
+        <div class="text-center p-5">
+            <h1 class="p-2">Elbert De La Cruz</h1>
+            <h4 class="p-2">Graphic Designer | Full Stack Web Developer | Digital Marketing Specialist</h4>
+            <p class="p-2 text-justify">
+                A versatile professional excelling as a Graphic Designer, Full Stack Web Developer, and Digital Marketing Specialist. With a keen eye for design aesthetics, I transform concepts into visually compelling creations. Simultaneously, my expertise in Full Stack Web Development ensures seamless and innovative digital experiences. As a Digital Marketing Specialist, I strategize campaigns that optimize online presence and engagement. My passion lies in the convergence of design, development, and digital marketing, creating a dynamic blend that propels projects to new heights. Join me in the exciting realm where creativity meets technology, leaving a lasting impact in every venture.
+            </p>
+        </div>
+
+        <div class="d-inline d-grid justify-content-center">
+            <div id="links" class="row mb-5 text-center">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <a class="nav-link" aria-current="page" href="#services"><img src="./images/services-sm.png"></a>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <a class="nav-link" href="#projects"><img src="./images/projects-sm.png"></a>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <a class="nav-link" href="#contact"><img src="./images/contact-sm.png"></a>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <a class="nav-link" href="#tools"><img src="./images/tools-sm.png"></a>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End-->
+
+    <!-- Services Section Start -->
+    <section id="services" class="d-flex d-grid p-2 mt-3 pt-5 gap-5 bg-dark justify-content-center">
+      <div class="row text-center col-lg-12 p-2">
+
+        <div>
+            <img class="card-img-top col-md-6 col-sm-12 justify-content-center" src="./images/services.png">
+        </div>
+
+        <div id="webdev-services" class="col-lg-4 col-md-6 my-3">
+          <div class="p-5 border border-warning">
+            <img class="card-img-top" src="./images/webdev.png">
+            <h3 class="mt-3">Web Development</h3>
+            <p>
+                Welcome to a realm where your digital dreams come to life!
+            </p>
+
+            <div id="web-development" class="accordion-item bg-dark flex-1">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button text-warning bg-dark border-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Web Development (Read More...)
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <strong>Embark on a digital journey with our bespoke web development services!</strong> I'm dedicated to translating your vision into a dynamic online reality. From intuitive designs to powerful functionalities, I specialize in crafting websites that captivate audiences and drive success. Elevate your online presence with a seamless, responsive, and visually stunning website. Let's collaborate to ensure your digital footprint stands out in the vast landscape of the web.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="graphics-services" class="col-lg-4 col-md-6 my-3">
+          <div class="p-5 border border-warning">
+            <img class="card-img-top" src="./images/graphics.png">
+            <h3 class="mt-3">Graphic Design</h3>
+            <p>
+               Welcome to a realm of visual ingenuity, let's make your brand standout!
+            </p>
+
+            <div id="graphic-design" class="accordion-item bg-dark flex-1">
+              <h2 class="accordion-header" id="graphic-design">
+                <button class="accordion-button text-warning bg-dark border-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Graphic Design (Read More...)
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  <strong>Step into a world of visual excellence where your brand's story unfolds with creativity and precision.</strong> I am your conduit to unparalleled graphic design services. Specializing in everything from compelling logos to immersive visuals, here to infuse your concepts with creativity. Let's embark on a collaborative journey, transforming your ideas into captivating designs that leave an indelible mark. Elevate your brand aesthetic, and make a lasting impression in the dynamic landscape of modern design.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 my-3">
+          <div id="marketing-services" class="p-5 border border-warning">
+            <img class="card-img-top" src="./images/marketing.png">
+            <h3 class="mt-3">Digital Marketing</h3>
+            <p>
+                Let me take you to a world of strategic prowess, and your brand to new heights!
+            </p>
+
+            <div id="digital-marketing" class="accordion-item bg-dark flex-1">
+              <h2 class="accordion-header" id="digital-marketing">
+                <button class="accordion-button text-warning bg-dark border-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Digital Marketing (Read More...)
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <strong>I specialize in dynamic digital marketing services designed to catapult your brand to new heights.</strong> From targeted social media campaigns to data-driven SEO strategies, my mission is to maximize your online presence. Let's craft a bespoke plan and strategy, leveraging the power of digital channels to boost visibility, engage audiences, and drive conversions. Ready to navigate the digital landscape together and unlock the full potential of your brand?
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Projects Section Start -->
+    <section id="projects" class="d-flex d-grid px-2 mt-3 pt-5 pb-5 gap-5 bg-dark justify-content-center">
+      <div class="row text-center col-lg-12 p-2">
+
+        <div>
+            <img class="card-img-top col-md-6 col-sm-12 justify-content-center" src="./images/projects.png">
+        </div>
+
+        <div id="webdev-projects" class="col-lg-4 col-md-6 my-3">
+          <div class="p-3">
+            <img id="webdev-title" class="card-img-top pb-3" src="./images/webdev2.png">
+          </div>
+
+          <div id="webdev-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#webdev-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#webdev-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#webdev-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/webdev-projects-1.png" class="d-block w-100" alt="./images/webdev-projects-1.png">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/webdev-projects-2.png" class="d-block w-100" alt="./images/webdev-projects-2.png">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/webdev-projects-3.png" class="d-block w-100" alt="./images/webdev-projects-3.png">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#webdev-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#webdev-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div id="graphics-projects" class="col-lg-4 col-md-6 my-3">
+          <div class="p-3">
+            <img id="graphics-title" class="card-img-top pb-3" src="./images/graphics2.png">
+          </div>
+
+          <div id="graphics-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="projects-title" class="carousel-indicators">
+              <button type="button" data-bs-target="#graphics-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#graphics-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#graphics-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#graphics-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#graphics-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#graphics-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/graphics-projects-1.png" class="d-block w-100" alt="./images/graphics-projects-1.png">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/graphics-projects-2.png" class="d-block w-100" alt="./images/graphics-projects-2.png">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/graphics-projects-3.png" class="d-block w-100" alt="./images/graphics-projects-3.png">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/graphics-projects-4.png" class="d-block w-100" alt="./images/graphics-projects-4.png">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/graphics-projects-5.png" class="d-block w-100" alt="./images/graphics-projects-5.png">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/graphics-projects-6.png" class="d-block w-100" alt="./images/graphics-projects-6.png">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#graphics-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#graphics-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+
+        <div id="marketing-projects" class="col-lg-4 col-md-12 my-3">
+          <div class="p-3">
+            <img id="marketing-title" class="card-img-top pb-3" src="./images/marketing2.png">
+          </div>
+
+          <div id="marketing-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#marketing-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#marketing-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#marketing-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/marketing-projects-1.png" class="d-block w-100" alt="./images/marketing-projects-1.png">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/marketing-projects-2.png" class="d-block w-100" alt="./images/marketing-projects-2.png">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/marketing-projects-3.png" class="d-block w-100" alt="./images/marketing-projects-3.png">
+              </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#marketing-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#marketing-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section End -->
+
+    <!-- Tools Section Start -->
+    <section id="tools" class="d-flex d-grid pb-2 gap-5 bg-dark justify-content-center">
+      <div class="row text-center col-lg-12">
+
+        <div id="whatiuse">
+            <img class="card-img-top col-md-6 col-sm-12 justify-content-center pt-5" src="./images/tools.png">
+        </div>
+
+        <!-- WebDev Tools Start -->
+        <div id="webdev-tools">
+          <div class="pt-5">
+            <div id="tools-accordion" class="accordion-item bg-dark d-flex flex-column">
+              <h3 class="m-3">Web Development Tools</h3>
+
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button text-warning bg-dark border-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Click Me!
+                </button>
+              </h2>
+
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+
+                <div class="d-flex flex-md-column text-center align-items-center justify-content-center">
+
+                    <div class="d-md-flex align-items-center justify-content-center">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/webdev/logo-html5.png">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/webdev/logo-javascript.png">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/webdev/logo-css3.png">
+                    </div>
+
+                </div>
+
+                <div class="d-flex flex-md-column text-center align-items-center justify-content-center">
+
+                    <div class="d-md-flex align-items-center justify-content-center">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/webdev/logo-bootstrap.png">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/webdev/logo-expressjs.png">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/webdev/logo-git.png">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/webdev/logo-gitlab-ci-cd.png">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/webdev/logo-heroku.png">
+                    </div>
+
+                    <div class="d-md-flex align-items-center justify-content-center">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/webdev/logo-mongodb.png">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/webdev/logo-nodejs.png">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/webdev/logo-postman.png">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/webdev/logo-react.png">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/webdev/logo-rest.png">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/webdev/logo-sublime-text-3.png">
+                    </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- WebDev Tools End -->
+
+        <!-- Graphic Tools Start -->
+        <div id="graphic-tools">
+          <div class="pt-5">
+            <div id="tools-accordion" class="accordion-item bg-dark d-flex flex-column">
+              <h3 class="m-3">Graphic Design Tools</h3>
+
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button text-warning bg-dark border-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Click Me!
+                </button>
+              </h2>
+
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+
+                <div class="d-flex flex-md-column text-center align-items-center justify-content-center">
+
+                    <div class="d-md-flex align-items-center justify-content-center">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/graphics/creative-cloud.svg">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/graphics/photoshop.svg">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/graphics/illustrator.svg">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/graphics/indesign.svg">
+                    </div>
+
+                    <div class="d-md-flex align-items-center justify-content-center">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/graphics/aftereffects.svg">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/graphics/premier.png">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/graphics/canva.svg">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/graphics/wordpress.svg">
+                    </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Graphic Tools End -->
+
+        <!-- Marketing Tools Start -->
+        <div id="marketing-tools">
+          <div class="py-5">
+            <div id="tools-accordion" class="accordion-item bg-dark d-flex flex-column">
+              <h3 class="m-3">Digital Marketing Tools</h3>
+
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button text-warning bg-dark border-warning" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                Click Me!
+                </button>
+              </h2>
+
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+
+                <div class="d-flex flex-md-column text-center align-items-center justify-content-center">
+
+                    <div class="d-md-flex align-items-center justify-content-center">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/marketing/meta.png">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/marketing/googleads.png">
+                    </div>
+
+                </div>
+
+                <div class="d-flex flex-md-column text-center align-items-center justify-content-center">
+
+                    <div class="d-md-flex align-items-center justify-content-center">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/marketing/facebook.png">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/marketing/instagram.png">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/marketing/tiktok.png">
+                    </div>
+
+                    <div class="d-md-flex align-items-center justify-content-center">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/marketing/chatgpt.png">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/marketing/canva.png">
+                      <img width="100" class="mx-3 my-3" src="./images/tools/marketing/WordPress.png">
+                    </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Marketing Tools End -->
+        
+      </div>
+    </section>
+    <!-- Tools Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="d-flex d-grid p-2 mt-3 pt-5 gap-5 bg-dark justify-content-center">
+      <div class="row text-center col-lg-12 p-2">
+
+        <div id="contact-title">
+            <img class="card-img-top col-md-6 col-sm-12 justify-content-center pb-5" src="./images/contact.png">
+        </div>
+
+        <div id="contact-section" class="container-fluid d-flex p-3 gap-5">
+          <div class="row mt-5">
+            <div class="col-md-6 col-sm-12 px-3 text-md-right">
+                <h1 class="pb-3">Elbert De La Cruz</h1>
+                <p class="pb-md-5 pb-sm-2 text-justify">Hello, I'm Elbert De La Cruz—a versatile professional adept at Full Stack Web Development, Graphic Design, and Digital Marketing. With a passion for seamless user experiences, I craft robust web solutions. In Graphic Design, I weave compelling visual narratives that elevate brand identities. As a Digital Marketing Specialist, I navigate the digital landscape strategically, maximizing brand visibility. Through a fusion of technical proficiency and creative finesse, I bring innovation to every project. Let's collaborate to make your digital presence not just meet but exceed expectations, harmonizing technology, design, and marketing for impactful results.</p>
+                <h3 class="pb-3">Address</h3>
+                <p class="pb-md-5 pb-sm-2">Phase 1 Building 9 Unit 310 Urban Deca Homes, Tisa, Cebu City 6000</p> 
+                <h3 class="pb-3">Contact Number</h3>
+                <p class="pb-md-5 pb-sm-2">+63 995 152 4098</p>
+            </div>
+            <!-- col-sm-12 col-md-6 col-xl-4 -->
+              <div id="form" class="col-md-6 col-sm-12 px-3">
+                  <form id="form-col">
+                      <div class="form-group py-3">
+                        <label for="name" >Name</label>
+                        <input type="text" class="form-control bg-dark border-warning text-muted" id="name" placeholder="Your Name" required/>
+
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control bg-dark border-warning text-muted" id="email" placeholder="name@email.com" required/>
+
+                        <label for="number">Contact Number</label>
+                        <input type="contact-number" class="form-control bg-dark border-warning text-muted" id="number" placeholder="+63 000 000 0000" pattern="[+][0-9]{12}" required/>
+                    
+                      <div class="form-group">
+                        <label for="concern">Concern</label>
+                          <select class="form-control text-muted bg-dark border-warning" id="input-concern" placeholder="Please Select One" required>
+                            <option class="text-muted">-- Please Select One --</option>
+                            <option>Quotation</option>
+                            <option>Appointment</option>
+                            <option>Follow-Up</option>
+                          </select>
+                      </div>
+
+                      <div class="form-group">
+                          <label for="message-area">Message</label>
+                          <textarea class="form-control bg-dark border-warning text-muted" id="message-area" rows="8" placeholder="Your message here"></textarea>
+                      </div>
+
+                      <button type="submit" id="submit" class="btn btn-dark text-warning" data-toggle="modal" data-target="#myModal">Send Email</button>
+                        <div class="modal fade" id="myModal" role="dialog">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h4 class="modal-title text-dark">Thank you for contacting us!</h4>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                              </div>
+                              <div class="modal-body">
+                                <p class="text-dark">Message Successfully Sent</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default bg-dark text-warning" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>                      
+                  </form>                    
+              </div>               
+          </div>        
+        </div>
+
+        <!-- Map Start -->
+        <div>
+            <div>
+                <h3 class="text-center my-4">You can find me here!</h3>
+            </div>
+
+            <div class="pb-2">
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1650.4425404389408!2d123.86638826933202!3d10.30694697514653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a99ea3a69c0663%3A0xafd8f2de403eb6de!2sUrban%20Deca%20Homes%20Tisa!5e0!3m2!1sen!2sph!4v1701601082107!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Map End -->
+
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start-->
+    <footer id="footer" class="mt-5 py-3 px-5 justify-content-around">
+        
+        <div class="container pb-3 justify-content-center text-center">
+            <div><h3 class="text-dark"><strong>Elbert De La Cruz</strong></h3></div>
+            <p id="description" class="font-italic text-dark">Full Stack Web Developer | Graphic Designer | Digital Marketing Specialist</p>
+            <p id="copyright" class="text-dark">All rights reserved 2023</p>
+        </div>
+
+            <!-- <div class="text-center d-flex justify-content-center">
+                <ul class="d-flex gap-5">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                </ul>
+            </div> -->
+
+        <div id="icons" class="d-flex gap-3 justify-content-center pb-3">
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com/gideonbuchoy">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+            </a>
+
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com/gideon_elbert/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+            </a>
+
+            <!-- LinkedIn Icon -->
+            <a href="https://www.linkedin.com/in/elbert-de-la-cruz-076a5220/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"/>
+                </svg>
+            </a>
+
+            <!-- GitLab  Icon -->
+            <a href="https://gitlab.com/me4994740/Me">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-gitlab" viewBox="0 0 16 16">
+                  <path d="m15.734 6.1-.022-.058L13.534.358a.568.568 0 0 0-.563-.356.583.583 0 0 0-.328.122.582.582 0 0 0-.193.294l-1.47 4.499H5.025l-1.47-4.5A.572.572 0 0 0 2.47.358L.289 6.04l-.022.057A4.044 4.044 0 0 0 1.61 10.77l.007.006.02.014 3.318 2.485 1.64 1.242 1 .755a.673.673 0 0 0 .814 0l1-.755 1.64-1.242 3.338-2.5.009-.007a4.046 4.046 0 0 0 1.34-4.668Z"/>
+                </svg>
+            </a>
+
+            <!-- Zuitt Git Icon -->
+            <a href="https://git.zuitt.co/elbert.vi.delacruz">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>
+            </a>
+
+        </div>
+    </footer>
+    <!-- Footer End-->
+
+    <!-- Back to Top Start -->
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+      <a href="#carousel">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+      </svg></a>
+    </button>
+    <!-- Back to Top End -->
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
