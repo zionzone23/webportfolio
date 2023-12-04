@@ -1,6 +1,6 @@
 {
     "capstone": {
-        "liveLink": "<github page link>",
+        "liveLink": "https://zionzone23.github.io/webportfolio/",
         "name": "Elbert De La Cruz",
         "isMulti": false
     }
